@@ -55,6 +55,49 @@ input {
     margin: 1vh;
 }
 
+.boxLetters {
+    padding-top: 1.5vh;
+    font-weight: bold;
+    font-size: 3vh;
+    color: rgb(248, 248, 248);
+    display: inline-block;
+    width: 6vh;
+    height: 6vh;
+    background-color: rgb(129, 131, 132);
+    margin: 0.5vh;
+}
+
+#containerLetters {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 2vh;
+}
+
 .green { background-color: rgb(83, 141, 78); }
 .yellow { background-color: rgb(218, 178, 45); }
 .grey { background-color: rgb(58, 58, 60); }
+
+
+@media (max-width: 400px) {
+    .boxLetters {
+        display: none;
+
+    }
+}
+
+@media (max-width: 270px){
+    .box {
+        width: 7vh;
+        height: 7vh;
+    }
+
+    input, button {
+        height: 5vh;
+        font-size: 3vh;
+    }
+    
+    input {
+        width: 30vh;
+    }
+}

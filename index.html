@@ -6,12 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<script src="script.js" defer></script>
 	<title>Wordle</title>
 </head>
 <body>
 	<div id="header">DEVELOPED BY THYMEN VAN GIJSEL</div>
-	<input placeholder="Enter word ..."></input><button onclick="handleButtonClick()">START</button>
+	<input placeholder="Enter word ..." maxlength="5"></input><button onclick="handleButtonClick()">GUESS</button>
 	<div id="container"></div>
+	<div id="containerLetters"></div>
 </body>
 </html>
